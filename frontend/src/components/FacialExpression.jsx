@@ -121,7 +121,7 @@ export default function FacialExpression({ setSongs }) {
     }
 
     axios
-      .get(`http://localhost:3000/songs?mood=${expressionName}`)
+      .get(`https://moody-backend-5yn9.onrender.com/songs?mood=${expressionName}`)
       .then((res) => {
         setSongs(res.data.songs);
       });
